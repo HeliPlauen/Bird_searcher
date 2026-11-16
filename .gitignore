@@ -1,0 +1,21 @@
+*.spec
+.DS_Store
+
+# EXE archives
+*.zip
+*.rar
+*.7z
+
+# Directories
+build/
+dist/
+env/
+venv/
+.venv/
+__pycache__/
+
+# Need to check
+.vs/
+.pytest_cache/
+.idea/
+AppData/
