@@ -3,7 +3,6 @@
 Проєкт для виявлення птахів на зображеннях та відеопотоці з використанням моделі **YOLO26n**.
 
 ---
-
 ## Структура проєкту та збережені артефакти
 
 * `weights/best.pt` — найкращі збережені ваги моделі (38-ма епоха).
@@ -12,7 +11,6 @@
 * `data/results.png` — графіки процесу навчання та валідації.
 
 ---
-
 ## Встановлення та запуск
 
 1. Клонуйте репозиторій та встановіть залежності:
@@ -39,7 +37,6 @@ python predict_video.py --input examples/input_2.mp4 --output examples/output_2.
 ```
 
 ---
-
 ## Датасет
 
 Датасет було взято на ресурсі **roboflow.com**:
@@ -48,7 +45,6 @@ python predict_video.py --input examples/input_2.mp4 --output examples/output_2.
 * **Ліцензія:** CC BY 4.0
 
 ---
-
 ## Метрики на Validation-вибірці
 
 === НАЙКРАЩІ МЕТРИКИ (ЗБЕРЕЖЕНІ В best.pt) ===
@@ -69,35 +65,33 @@ mAP50-95: 0.8282
 38              0.82669  
 39              0.82597 
 
-Детальна інформація про метрики - "data/results.png"
-Натренована модель - "data/yolo26n.pt"
+Детальна інформація про процес навчання та валідації у формі графіків - "data/results.png"
 
 ---
-
 ## Запуск встановлення залежностей (на локальному комп'ютері):
-
-**pip install -r requirements.txt**
+```bash
+pip install -r requirements.txt
+```
 
 ---
-
 ## Команда для запуску скрипта навчання (скорочена, тестова, на 1 епоху, на локальному комп'ютері):
-
-**python train.py --epochs 1 --batch 8**
+```bash
+python train.py --epochs 1 --batch 8
+```
 
 ---
-
 ## Команда для запуску скрипта навчання (робоча):
-
-**python train.py**
+```bash
+python train.py
+```
 
 ---
-
 ## Команда для обробки відео навченою моделлю:
-
-**python predict_video.py --input examples/input.mp4 --output examples/output.mp4**
+```bash
+python predict_video.py --input examples/input.mp4 --output examples/output.mp4
+```
 
 ---
-
 ## Проблеми, з якими довелося зіткнутися, та можливі покращення
 
 ### Виклики під час розробки:
